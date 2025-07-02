@@ -1,9 +1,11 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { AnimatedSection } from "@/components/animated-section";
-import { Users, Lightbulb, Heart, Zap } from "lucide-react";
+import { Users, Lightbulb, Heart, Zap, BarChart2, LifeBuoy, Circle } from "lucide-react";
 import { TeamSection } from "@/components/team-section";
+import { useTranslations } from "next-intl";
 
 export default function AboutPage() {
+  const t = useTranslations("common.about");
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -11,12 +13,10 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              About <span className="text-orange-500 font-bold">Reach4U</span>
+              {t("whoWeAre")} <span className="text-orange-500 font-bold">Reach4U</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We are passionate about helping businesses reach their full
-              potential through innovative digital solutions and strategic
-              marketing approaches.
+              {t("companyOverviewText")}
             </p>
           </div>
         </div>
@@ -28,20 +28,16 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Our Story
+                {t("companyOverview")}
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                Founded with a vision to bridge the gap between businesses and
-                their digital potential, <span className="text-orange-500 font-bold">Reach4U</span> has been at the forefront of
-                digital transformation. We believe that every business,
-                regardless of size, deserves access to world-class digital
-                marketing and development services.
+                {t("companyOverviewText")}
               </p>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                {t("expertise")}
+              </h2>
               <p className="text-lg text-gray-600 mb-6">
-                Our team combines creativity with technical expertise to deliver
-                solutions that not only look great but also drive real business
-                results. We're not just service providers; we're your digital
-                growth partners.
+                {t("expertiseText")}
               </p>
               <div className="grid grid-cols-3 gap-4">
                 <div className="text-center">
@@ -76,59 +72,90 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Our Values Section */}
+      {/* Vision, Mission, Why Choose Us Section */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Our Values
+              {t("vision")}
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              These core values guide everything we do and shape how we work
-              with our clients
+              {t("visionText")}
             </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 mt-10">
+              {t("whyChoose")}
+            </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="text-center p-8 h-full">
+            <Card className="text-start p-8 h-full">
               <CardContent className="pt-6">
                 <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Lightbulb size={32} className="text-orange-500" />
                 </div>
-                <h3 className="text-xl font-bold mb-4">Innovation</h3>
-                <p className="text-gray-600">
-                  We constantly explore new technologies and creative approaches
-                  to deliver cutting-edge solutions that keep our clients ahead
-                  of the competition.
-                </p>
+                <h3 className="text-xl font-bold mb-6 text-center">{t("localExpertise")}</h3>
+                <div className="text-gray-600 space-y-2">
+                  <div className="flex items-start gap-2"><Circle size={16} className="mt-1 text-orange-500 shrink-0" />{t("localExpertisePoint1")}</div>
+                  <div className="flex items-start gap-2"><Circle size={16} className="mt-1 text-orange-500 shrink-0" />{t("localExpertisePoint2")}</div>
+                  <div className="flex items-start gap-2"><Circle size={16} className="mt-1 text-orange-500 shrink-0" />{t("localExpertisePoint3")}</div>
+                </div>
               </CardContent>
             </Card>
 
-            <Card className="text-center p-8 h-full">
+            <Card className="text-start p-8 h-full">
               <CardContent className="pt-6">
                 <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Heart size={32} className="text-orange-500" />
                 </div>
-                <h3 className="text-xl font-bold mb-4">Passion</h3>
-                <p className="text-gray-600">
-                  We're passionate about what we do and genuinely care about our
-                  clients' success. This passion drives us to go above and
-                  beyond in every project.
-                </p>
+                <h3 className="text-xl font-bold mb-6 text-center">{t("specializedTeam")}</h3>
+                <div className="text-gray-600 space-y-2">
+                  <div className="flex items-start gap-2"><Circle size={16} className="mt-1 text-orange-500 shrink-0" />{t("specializedTeamPoint1")}</div>
+                  <div className="flex items-start gap-2"><Circle size={16} className="mt-1 text-orange-500 shrink-0" />{t("specializedTeamPoint2")}</div>
+                  <div className="flex items-start gap-2"><Circle size={16} className="mt-1 text-orange-500 shrink-0" />{t("specializedTeamPoint3")}</div>
+                </div>
               </CardContent>
             </Card>
 
-            <Card className="text-center p-8 h-full">
+            <Card className="text-start p-8 h-full">
               <CardContent className="pt-6">
                 <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Zap size={32} className="text-orange-500" />
                 </div>
-                <h3 className="text-xl font-bold mb-4">Excellence</h3>
-                <p className="text-gray-600">
-                  We maintain the highest standards in everything we deliver,
-                  ensuring quality, reliability, and exceptional results in
-                  every project we undertake.
-                </p>
+                <h3 className="text-xl font-bold mb-6 text-center">{t("advancedTech")}</h3>
+                <div className="text-gray-600 space-y-2">
+                  <div className="flex items-start gap-2"><Circle size={16} className="mt-1 text-orange-500 shrink-0" />{t("advancedTechPoint1")}</div>
+                  <div className="flex items-start gap-2"><Circle size={16} className="mt-1 text-orange-500 shrink-0" />{t("advancedTechPoint2")}</div>
+                  <div className="flex items-start gap-2"><Circle size={16} className="mt-1 text-orange-500 shrink-0" />{t("advancedTechPoint3")}</div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+            <Card className="text-start p-8 h-full">
+              <CardContent className="pt-6">
+                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <BarChart2 size={32} className="text-orange-500" />
+                </div>
+                <h3 className="text-xl font-bold mb-6 text-center">{t("measurableResults")}</h3>
+                <div className="text-gray-600 space-y-2">
+                  <div className="flex items-start gap-2"><Circle size={16} className="mt-1 text-orange-500 shrink-0" />{t("measurableResultsPoint1")}</div>
+                  <div className="flex items-start gap-2"><Circle size={16} className="mt-1 text-orange-500 shrink-0" />{t("measurableResultsPoint2")}</div>
+                  <div className="flex items-start gap-2"><Circle size={16} className="mt-1 text-orange-500 shrink-0" />{t("measurableResultsPoint3")}</div>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="text-start p-8 h-full">
+              <CardContent className="pt-6">
+                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <LifeBuoy size={32} className="text-orange-500" />
+                </div>
+                <h3 className="text-xl font-bold mb-6 text-center">{t("continuousSupport")}</h3>
+                <div className="text-gray-600 space-y-2">
+                  <div className="flex items-start gap-2"><Circle size={16} className="mt-1 text-orange-500 shrink-0" />{t("continuousSupportPoint1")}</div>
+                  <div className="flex items-start gap-2"><Circle size={16} className="mt-1 text-orange-500 shrink-0" />{t("continuousSupportPoint2")}</div>
+                  <div className="flex items-start gap-2"><Circle size={16} className="mt-1 text-orange-500 shrink-0" />{t("continuousSupportPoint3")}</div>
+                </div>
               </CardContent>
             </Card>
           </div>

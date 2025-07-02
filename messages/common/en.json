@@ -1,5 +1,399 @@
 {
   "common": {
-    "Cancel": "Cancel"
+    "Cancel": "Cancel",
+    "header": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "pricing": "Pricing",
+      "contact": "Contact",
+      "getStarted": "Get Started"
+    },
+    "footer": {
+      "description": "We are a leading digital services company specializing in search engine optimization, marketing, and advertising to enhance brands and projects.",
+      "quickLinksTitle": "Quick Links",
+      "servicesTitle": "Services",
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "pricing": "Pricing",
+      "contact": "Contact",
+      "seo": "SEO Optimization",
+      "digitalMarketing": "Digital Marketing",
+      "webDev": "Web Development",
+      "graphicDesign": "Graphic Design",
+      "brandStrategy": "Brand Strategy",
+      "rights": "All rights reserved."
+    },
+    "contact": {
+      "contact_title": "Contact Us",
+      "contact_subtitle": "Reach 4U - Your Partner in Digital Success",
+      "contact_email_label": "Email Us",
+      "contact_email_1": "info@reach4u.sa",
+      "contact_phone_label": "Call Us",
+      "contact_phone_1": "+966 50 XXX XXXX",
+      "contact_website_label": "Visit Our Website",
+      "contact_website_1": "www.reach4u.sa",
+      "contact_address_label": "Visit Us",
+      "contact_address_1": "Riyadh, Kingdom of Saudi Arabia",
+      "contact_form_title": "Send us a Message",
+      "contact_form_first_name": "First Name",
+      "contact_form_last_name": "Last Name",
+      "contact_form_email": "Email Address",
+      "contact_form_phone": "Phone Number",
+      "contact_form_service": "Service Interested In",
+      "contact_form_message": "Message",
+      "contact_form_button": "Send Message",
+      "contact_info_title": "Get in Touch",
+      "contact_info_desc": "We're here to help you achieve your digital goals. Reach out to us through any of the following channels:",
+      "business_hours_label": "Business Hours",
+      "business_hours_week": "Sunday - Thursday: 9:00 AM - 6:00 PM",
+      "business_hours_weekend": "Saturday: 10:00 AM - 4:00 PM",
+      "quick_response_title": "Quick Response Guarantee",
+      "quick_response_desc": "We typically respond to all inquiries within 24 hours during business days. For urgent matters, please call us directly.",
+      "map_title": "Interactive Map",
+      "map_placeholder": "Map integration would be implemented here",
+      "contact_form_digital_marketing": "Digital Marketing",
+      "contact_form_seo": "Search Engine Optimization (SEO)",
+      "contact_form_web_development": "Web Development",
+      "contact_form_graphic_design": "Graphic Design",
+      "contact_form_brand_strategy": "Brand Strategy",
+      "title": "Get In Touch",
+      "subtitle": "Ready to start your digital transformation? Contact us today for a free consultation",
+      "sendHeader": "Send us a Message",
+      "fullName": "Full Name",
+      "email": "Email Address",
+      "subject": "Subject",
+      "message": "Message",
+      "sendButton": "Send Message",
+      "infoHeader": "Contact Information",
+      "infoSubtitle": "We're here to help you achieve your digital goals. Reach out to us through any of the following channels:",
+      "emailUs": "Email Us",
+      "callUs": "Call Us",
+      "visitUs": "Visit Us",
+      "emails": ["info@reach4u.com", "support@reach4u.com"],
+      "phones": ["+1 (555) 123-4567", "+1 (555) 987-6543"],
+      "addressLines": ["123 Digital Street", "Tech City, TC 12345"],
+      "guaranteeHeader": "Quick Response Guarantee",
+      "guaranteeText": "We typically respond to all inquiries within 24 hours during business days. For urgent matters, please call us directly."
+    },
+    "pricing": {
+      "plans": [
+        {
+          "name": "Basic Package",
+          "description": "Integrated digital marketing for startup success",
+          "features": [
+            "Integrated advertising on Facebook, Instagram, Snapchat, TikTok",
+            "Precise targeting of Saudi and Gulf audiences",
+            "Competitor analysis and strategy",
+            "Weekly performance reports",
+            "Basic content management",
+            "Ideal for startups",
+            "Increased digital visibility",
+            "High-quality lead generation"
+          ]
+        },
+        {
+          "name": "Middle Package",
+          "description": "Marketing plus professional content design",
+          "features": [
+            "All Basic Package features",
+            "Design of 15 monthly posts",
+            "Initial visual identity (logo, colors)",
+            "Monthly content strategy",
+            "2 banner designs",
+            "Great for small/medium brands",
+            "Enhanced brand identity",
+            "Engaging professional content"
+          ]
+        },
+        {
+          "name": "Gold Package",
+          "description": "Marketing, content, and website in one",
+          "features": [
+            "All features in previous packages",
+            "Complete website (5 pages)",
+            "Basic SEO setup",
+            "Mobile-optimized, fast-loading",
+            "Social media integration",
+            "1 month technical support",
+            "Ideal for medium businesses",
+            "Improves digital presence"
+          ]
+        },
+        {
+          "name": "Platinum Package",
+          "description": "Full marketing, branding, web, and media",
+          "features": [
+            "Complete marketing management",
+            "30 pro-designed posts/month",
+            "Complete visual identity package",
+            "Advanced website with e-store",
+            "2 marketing videos/month",
+            "Daily & weekly reports",
+            "For large brands & companies",
+            "Total marketing management"
+          ]
+        }
+      ],
+      "choosePlan": "Choose the Right Plan for You",
+      "subtitle": "Flexible packages tailored to fit your business needs and marketing goals.",
+      "mostPopular": "Most Popular",
+      "getStarted": "Get Started",
+      "contactSales": "Contact Sales",
+      "faqTitle": "Frequently Asked Questions",
+      "faqSubtitle": "Got questions? We’ve got answers. Check out our most commonly asked questions below.",
+      "faqs": [
+        {
+          "question": "Can I upgrade my package later?",
+          "answer": "Yes, you can upgrade at any time by contacting our support team."
+        },
+        {
+          "question": "Do you offer custom packages?",
+          "answer": "Absolutely! We can tailor a package to meet your unique business requirements."
+        },
+        {
+          "question": "Is there a contract period?",
+          "answer": "Most packages are billed monthly, with no long-term contract required."
+        },
+        {
+          "question": "Do you offer support?",
+          "answer": "Yes, our team provides ongoing support depending on your selected package."
+        }
+      ]
+    },
+    "hero": {
+      "title": "Digital Excellence",
+      "highlight": "Made Simple",
+      "description": "We transform your business with professional digital marketing, stunning design, and powerful web solutions.",
+      "getStarted": "Get Started",
+      "contactUs": "Contact Us",
+      "services": [
+        {
+          "title": "Digital Marketing",
+          "description": "SEO, Social Media & PPC"
+        },
+        {
+          "title": "Creative Design",
+          "description": "Branding & Visual Identity"
+        },
+        {
+          "title": "Web Development",
+          "description": "Modern & Responsive Sites"
+        }
+      ]
+    },
+    "additionalServices": {
+      "title": "Our Additional Services",
+      "content": {
+        "title": "Content Management",
+        "features": [
+          "Creative and Compelling Content Writing",
+          "Social Media Account Management",
+          "Digital Content Strategy Development"
+        ]
+      },
+      "video": {
+        "title": "Video Marketing",
+        "features": [
+          "Professional Marketing Video Production",
+          "Motion Graphics and Animation",
+          "Live Broadcasting and Event Coverage"
+        ]
+      },
+      "ecommerce": {
+        "title": "E-Commerce",
+        "features": [
+          "Integrated Online Store Development",
+          "Inventory and Sales Management",
+          "Electronic Payment System Integration"
+        ]
+      },
+      "training": {
+        "title": "Training and Consulting",
+        "features": [
+          "Digital Marketing Workshops",
+          "Specialized Marketing Consulting",
+          "Internal Team Training"
+        ]
+      }
+    },
+    "whyChooseUs": {
+      "heading": "Why Choose Reach4U?",
+      "description": "We combine creativity, technical expertise, and strategic thinking to deliver results that exceed expectations and drive real business growth.",
+      "features": [
+        {
+          "title": "Proven Results",
+          "description": "Track record of successful campaigns and satisfied clients across various industries"
+        },
+        {
+          "title": "Expert Team",
+          "description": "Skilled professionals with years of industry experience and continuous learning"
+        },
+        {
+          "title": "Custom Solutions",
+          "description": "Tailored strategies that fit your unique business needs and goals"
+        },
+        {
+          "title": "24/7 Support",
+          "description": "Always available to help you achieve your goals and resolve any issues"
+        }
+      ],
+      "commitmentTitle": "Our Commitment",
+      "commitmentDescription": "Delivering exceptional digital solutions that transform businesses and create lasting success"
+    },
+    "about": {
+      "whoWeAre": "Who We Are",
+      "companyOverview": "Company Overview",
+      "companyOverviewText": "In a world where digital transformation is accelerating, e-marketing has become the backbone of success for any business. Reach 4U is not just an ordinary marketing company, but your strategic partner on your journey towards excellence and expansion in the Saudi and international markets. At Reach 4U, we believe that your business success depends not only on your digital presence, but also on how you connect with your audience and the quality of the content you provide.",
+      "expertise": "Our Expertise",
+      "expertiseText": "Reach 4U is a specialized digital marketing agency based in Saudi Arabia, with extensive experience in e-marketing, graphic design, web development, and campaign management. We rely on the latest analytical tools and smart marketing methods to ensure your brand reaches the right audience, at the right time, and in the most impactful way.",
+      "vision": "Our Vision",
+      "visionText": "To be the leading agency in providing innovative marketing solutions that help companies grow and thrive in a competitive market, while preserving brand identity and values.",
+      "whyChoose": "Why Choose Reach 4U?",
+      "localExpertise": "1. Deep Local Expertise",
+      "localExpertisePoint1": "Deep understanding of the Saudi and Gulf markets",
+      "localExpertisePoint2": "Knowledge of local culture and consumer preferences",
+      "localExpertisePoint3": "Wide network of local partnerships",
+      "specializedTeam": "2. Specialized and Professional Team",
+      "specializedTeamPoint1": "Experts in digital marketing and design",
+      "specializedTeamPoint2": "Creative designers and professional developers",
+      "specializedTeamPoint3": "Experienced marketing consultants",
+      "advancedTech": "3. Advanced Technologies",
+      "advancedTechPoint1": "Use of the latest analysis and marketing tools",
+      "advancedTechPoint2": "AI technologies in targeting",
+      "advancedTechPoint3": "Advanced content management systems",
+      "measurableResults": "4. Measurable Results",
+      "measurableResultsPoint1": "Transparent and detailed reports",
+      "measurableResultsPoint2": "Clear performance indicators",
+      "measurableResultsPoint3": "Accurate ROI analytics",
+      "continuousSupport": "5. Continuous Technical Support",
+      "continuousSupportPoint1": "Regular follow-up of campaigns and projects",
+      "continuousSupportPoint2": "24/7 technical support",
+      "continuousSupportPoint3": "Continuous updates and improvements"
+    },
+    "team": {
+      "management": {
+        "title": "Management Team",
+        "ibrahimGharib": {
+          "name": "Ibrahim Gharib",
+          "position": "General Manager"
+        },
+        "abdullahHilal": {
+          "name": "Abdullah Hilal",
+          "position": "Executive Manager"
+        }
+      },
+      "qr": {
+        "scan": "Scan the Barcode",
+        "contact": "For Communication"
+      },
+      "workTeam": {
+        "title": "Work Team",
+        "subtitle": "Our diverse team of experts brings together creativity, technical expertise, and strategic thinking to deliver exceptional results for our clients.",
+        "abdulrahmanAdwan": {
+          "name": "Abdulrahman Adwan",
+          "position": "Video Engineer"
+        },
+        "khaledAhmed": {
+          "name": "Khaled Ahmed",
+          "position": "Website Producer"
+        },
+        "shaabanElsayed": {
+          "name": "Shaaban El-Sayed",
+          "position": "Social Media Management"
+        },
+        "abdulrahmanQassas": {
+          "name": "Abdulrahman Al-Qassas",
+          "position": "Marketing Content Writer"
+        },
+        "ahmedKhammar": {
+          "name": "Ahmed Khammar",
+          "position": "Marketing Manager"
+        },
+        "mahmoudHilal": {
+          "name": "Mahmoud Hilal",
+          "position": "Audio Engineer",
+          "position2": "Audio Engineering"
+        }
+      },
+      "slogan": "We are more than a team.. We are a creative family that makes a mark between planning, marketing, and production.. Our team writes your story with perfection."
+    },
+    "services": {
+      "title": "What Makes Us Unique?",
+      "mainServices": [
+        {
+          "title": "Websites",
+          "points": [
+            "Design of fast, responsive, and SEO-optimized websites",
+            "Professional website design reflecting your brand identity",
+            "Website performance and loading speed optimization",
+            "Outstanding and user-friendly experience"
+          ]
+        },
+        {
+          "title": "Advertising Campaigns",
+          "points": [
+            "We ensure your ads appear to potential customers at the best cost",
+            "Precise targeting of the right audience",
+            "Professional management of advertising campaigns",
+            "Continuous analysis to improve performance"
+          ]
+        },
+        {
+          "title": "Attractive Designs",
+          "points": [
+            "A team of professional designers delivers visual content that expresses your brand professionally",
+            "Creative and innovative designs",
+            "Integrated and consistent visual identity",
+            "Designs that follow the latest trends"
+          ]
+        },
+        {
+          "title": "Precise Targeting",
+          "points": [
+            "We use data analytics to target the right audience in Saudi Arabia and the Gulf",
+            "Analysis of potential customer behavior",
+            "Developing customized strategies for each client",
+            "Continuous measurement and analysis of results"
+          ]
+        }
+      ],
+      "additionalServicesTitle": "Additional Services",
+      "additionalServices": [
+        {
+          "title": "Content Management",
+          "points": [
+            "Creative and persuasive content writing",
+            "Social media account management",
+            "Development of digital content strategies"
+          ]
+        },
+        {
+          "title": "Video Marketing",
+          "points": [
+            "Production of professional marketing videos",
+            "Motion graphics and animation",
+            "Live streaming and event coverage"
+          ]
+        },
+        {
+          "title": "E-Commerce",
+          "points": [
+            "Development of integrated e-commerce stores",
+            "Inventory and sales management",
+            "Integration of electronic payment systems"
+          ]
+        },
+        {
+          "title": "Training & Consulting",
+          "points": [
+            "Workshops in digital marketing",
+            "Specialized marketing consultations",
+            "Internal team training"
+          ]
+        }
+      ]
+    }
   }
 }
