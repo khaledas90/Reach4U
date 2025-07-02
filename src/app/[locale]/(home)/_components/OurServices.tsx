@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { AnimatedSection } from "@/components/animated-section";
 import { TrendingUp, Palette, Code, CheckCircle } from "lucide-react";
 import Link from "next/link";
 

@@ -5,13 +5,13 @@ import { TeamSection } from "@/components/team-section";
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen ">
+    <div className="min-h-screen">
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-orange-50 to-orange-100">
         <div className="container mx-auto px-4">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              About Reach4U
+              About <span className="text-orange-500 font-bold">Reach4U</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               We are passionate about helping businesses reach their full
@@ -32,7 +32,7 @@ export default function AboutPage() {
               </h2>
               <p className="text-lg text-gray-600 mb-6">
                 Founded with a vision to bridge the gap between businesses and
-                their digital potential, Reach4U has been at the forefront of
+                their digital potential, <span className="text-orange-500 font-bold">Reach4U</span> has been at the forefront of
                 digital transformation. We believe that every business,
                 regardless of size, deserves access to world-class digital
                 marketing and development services.

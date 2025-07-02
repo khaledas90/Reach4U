@@ -123,10 +123,11 @@ export function Portfolio() {
                   alt={item.title}
                   className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-orange-500/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <div className="absolute inset-0 bg-gradient-to-br from-orange-500/50 via-orange-500/30 to-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <div className="flex space-x-4">
                     <Button
                       size="sm"
+                      variant="ghost"
                       className="bg-white text-orange-500 hover:bg-gray-100"
                     >
                       <Eye size={16} className="mr-2" />

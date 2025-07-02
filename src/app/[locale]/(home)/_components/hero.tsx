@@ -56,7 +56,7 @@ export default function Hero() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
                   size="lg"
-                  className="bg-white text-orange-600 hover:bg-gray-100"
+                  className="bg-white text-orange-600 hover:bg-gray-100 transition-all duration-300"
                 >
                   <Link href="/services" className="text-orange-600">
                     Get Started
@@ -65,7 +65,7 @@ export default function Hero() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-white text-white hover:bg-white hover:text-orange-600 bg-transparent"
+                  className="border-white text-white hover:bg-white hover:text-black bg-transparent transition-all duration-300"
                 >
                   <Link href="/contact">Contact Us</Link>
                 </Button>
