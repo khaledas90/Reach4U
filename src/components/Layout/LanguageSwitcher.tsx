@@ -22,7 +22,7 @@ export default function LanguageSwitcher() {
         variant="outline"
         size="sm"
         onClick={toggleLanguage}
-        className="border border-black text-black hover:bg-black hover:text-white transition-colors"
+        className="border border-black text-black hover:bg-black"
       >
         {currentLocale === "en" ? "عربي" : "English"}
       </Button>
