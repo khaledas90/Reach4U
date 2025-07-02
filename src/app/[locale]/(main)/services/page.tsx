@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { AnimatedSection } from "@/components/animated-section";
 import {
   TrendingUp,
   Palette,
@@ -186,7 +185,7 @@ export default function ServicesPage() {
               },
             ].map((item, index) => (
               <div key={index}>
-                <div className="text-center">
+                <div className="text-center ring-[0.5px] ring-black/20 shadow-md p-4 rounded-2xl">
                   <div className="w-16 h-16 bg-orange-500 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                     {item.step}
                   </div>

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -75,6 +76,9 @@ export function Header() {
             <Button className="bg-primary-500 hover:bg-primary-600">
               Get Started
             </Button>
+            <div className="ml-4">
+              <LanguageSwitcher />
+            </div>
           </div>
 
           {/* Mobile Navigation Button */}
@@ -111,6 +115,9 @@ export function Header() {
                 <Button className="w-full bg-primary-500 hover:bg-primary-600">
                   Get Started
                 </Button>
+                <div className="mt-2 flex justify-center">
+                  <LanguageSwitcher />
+                </div>
               </div>
             </div>
           </div>

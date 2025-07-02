@@ -94,7 +94,7 @@ export default function PricingPage() {
                     plan.popular
                       ? "border-orange-500 border-2 scale-105"
                       : "border-gray-200"
-                  } hover:shadow-2xl transition-all duration-300 overflow-hidden`}
+                  } hover:shadow-2xl transition-all duration-300`}
                 >
                   {plan.popular && (
                     <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-40">
@@ -106,7 +106,7 @@ export default function PricingPage() {
 
                   {/* Header with gradient */}
                   <div
-                    className={`bg-gradient-to-r ${plan.color} p-6 text-white`}
+                    className={`bg-gradient-to-r ${plan.color} p-6 text-white rounded-t-md`}
                   >
                     <div className="flex items-center justify-center mb-4">
                       <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
