@@ -80,7 +80,7 @@ function ServiceCard({
         <div className="space-y-3 mb-6">
           {features.map((text, i) => (
             <div key={i} className="flex items-center text-sm text-gray-600">
-              <CheckCircle size={16} className="text-green-500 mr-3" />
+              <CheckCircle size={16} className="text-green-500 me-3" />
               {text}
             </div>
           ))}

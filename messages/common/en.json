@@ -9,6 +9,23 @@
       "contact": "Contact",
       "getStarted": "Get Started"
     },
+    "aboutUs": {
+      "title": "About Us",
+      "description": "In a world of accelerating digital transformation, digital marketing has become the lifeblood of any business's success. Reach 4U is not just an ordinary marketing company; it is your strategic partner in your journey towards excellence and expansion in the Saudi and international markets.",
+      "sectionTitle": "Our Mission & Vision",
+      "missionTitle": "Our Mission",
+      "missionText": "At Reach 4U, we believe that your business's success depends not only on your digital presence, but also on how you communicate with your audience and the quality of the content you provide.",
+      "visionTitle": "Our Vision",
+      "visionText": "To be the leading agency in providing innovative marketing solutions that help businesses grow and thrive in a competitive market, while preserving their brand identity and values.",
+      "stats": {
+        "experience": "Years Experience",
+        "clients": "Happy Clients",
+        "projects": "Projects Completed",
+        "rating": "Client Rating"
+      },
+      "closing": "Our team of passionate professionals brings together years of experience in digital marketing, creative design, and web development to help your business reach new heights in the digital world.",
+      "cta": "Discover Our Story"
+    },
     "footer": {
       "description": "We are a leading digital services company specializing in search engine optimization, marketing, and advertising to enhance brands and projects.",
       "quickLinksTitle": "Quick Links",
@@ -78,9 +95,13 @@
       "guaranteeText": "We typically respond to all inquiries within 24 hours during business days. For urgent matters, please call us directly."
     },
     "pricing": {
+      "title": "Our Pricing Plans",
+      "subtitle": "Choose the perfect plan for your business growth",
       "plans": [
         {
           "name": "Basic Package",
+          "price": "6000",
+          "period": "SAR",
           "description": "Integrated digital marketing for startup success",
           "features": [
             "Integrated advertising on Facebook, Instagram, Snapchat, TikTok",
@@ -91,10 +112,13 @@
             "Ideal for startups",
             "Increased digital visibility",
             "High-quality lead generation"
-          ]
+          ],
+          "popular": false
         },
         {
           "name": "Middle Package",
+          "price": "14000",
+          "period": "SAR",
           "description": "Marketing plus professional content design",
           "features": [
             "All Basic Package features",
@@ -105,10 +129,13 @@
             "Great for small/medium brands",
             "Enhanced brand identity",
             "Engaging professional content"
-          ]
+          ],
+          "popular": true
         },
         {
           "name": "Gold Package",
+          "price": "15000",
+          "period": "SAR",
           "description": "Marketing, content, and website in one",
           "features": [
             "All features in previous packages",
@@ -119,10 +146,13 @@
             "1 month technical support",
             "Ideal for medium businesses",
             "Improves digital presence"
-          ]
+          ],
+          "popular": false
         },
         {
           "name": "Platinum Package",
+          "price": "15000",
+          "period": "SAR",
           "description": "Full marketing, branding, web, and media",
           "features": [
             "Complete marketing management",
@@ -133,16 +163,16 @@
             "Daily & weekly reports",
             "For large brands & companies",
             "Total marketing management"
-          ]
+          ],
+          "popular": false
         }
       ],
       "choosePlan": "Choose the Right Plan for You",
-      "subtitle": "Flexible packages tailored to fit your business needs and marketing goals.",
       "mostPopular": "Most Popular",
       "getStarted": "Get Started",
       "contactSales": "Contact Sales",
       "faqTitle": "Frequently Asked Questions",
-      "faqSubtitle": "Got questions? We’ve got answers. Check out our most commonly asked questions below.",
+      "faqSubtitle": "Got questions? We've got answers. Check out our most commonly asked questions below.",
       "faqs": [
         {
           "question": "Can I upgrade my package later?",
@@ -160,7 +190,9 @@
           "question": "Do you offer support?",
           "answer": "Yes, our team provides ongoing support depending on your selected package."
         }
-      ]
+      ],
+      "commitmentTitle": "Our Commitment",
+      "commitmentDescription": "Delivering exceptional digital solutions that transform businesses and create lasting success"
     },
     "hero": {
       "title": "Digital Excellence",
@@ -240,7 +272,7 @@
         }
       ],
       "commitmentTitle": "Our Commitment",
-      "commitmentDescription": "Delivering exceptional digital solutions that transform businesses and create lasting success"
+      "commitmentDescription": "Delivering exceptional digital solutions that transform businesses and create lasting success"
     },
     "about": {
       "whoWeAre": "Who We Are",
@@ -321,6 +353,42 @@
     },
     "services": {
       "title": "What Makes Us Unique?",
+      "title": "Our Process",
+      "subtitle": "We follow a proven process to ensure the success of every project.",
+      "steps": [
+        {
+          "title": "Analysis & Consultation",
+          "points": [
+            "Market and competitor research",
+            "Current brand situation analysis",
+            "Developing a customized strategy"
+          ]
+        },
+        {
+          "title": "Planning & Development",
+          "points": [
+            "Designing a comprehensive marketing plan",
+            "Content and design development",
+            "Preparing advertising campaigns"
+          ]
+        },
+        {
+          "title": "Execution & Monitoring",
+          "points": [
+            "Precise strategy execution",
+            "Daily performance monitoring",
+            "Continuous improvements"
+          ]
+        },
+        {
+          "title": "Evaluation & Growth",
+          "points": [
+            "Results and performance evaluation",
+            "Comprehensive and detailed reports",
+            "Future development plans"
+          ]
+        }
+      ],
       "mainServices": [
         {
           "title": "Websites",

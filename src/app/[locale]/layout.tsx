@@ -40,7 +40,7 @@ export default async function RootLayout({
       <html
         lang={locale}
         dir={locale === "ar" ? "rtl" : "ltr"}
-        className={`${geistSans.variable} ${geistMono.variable}`}
+        className={`${locale === "ar" ? "font-baloo" : geistSans.variable} ${geistMono.variable}`}
         suppressHydrationWarning
       >
         <body className="antialiased">

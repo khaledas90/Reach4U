@@ -48,7 +48,7 @@ export default function LanguageSwitcher() {
         variant="outline"
         size="sm"
         onClick={() => setIsOpen(!isOpen)}
-        className="border border-black text-black hover:bg-black hover:text-white flex items-center gap-2 min-w-[100px] justify-between"
+        className="border border-black text-black hover:bg-black hover:text-gray-500 flex items-center gap-2 min-w-[100px] justify-between"
       >
         <div className="flex items-center gap-2">
           <Globe size={16} />

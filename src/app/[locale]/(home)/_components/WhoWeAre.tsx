@@ -15,7 +15,7 @@ import { useTranslations } from "next-intl";
 import React from "react";
 
 export default function WhoWeAre() {
-  const t = useTranslations("common.about");
+  const t = useTranslations("common.aboutUs");
 
   return (
     <section className="py-20 bg-gray-50">
