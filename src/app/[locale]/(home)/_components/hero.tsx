@@ -13,7 +13,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 md:pt-0">
       {/* Background Animation Part */}
       <div className="absolute inset-0 bg-gradient-to-br from-orange-500 to-orange-600">
         <div className="absolute inset-0">

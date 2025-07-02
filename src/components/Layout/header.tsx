@@ -34,7 +34,7 @@ export function Header() {
         scrolled ? "bg-white/95 backdrop-blur-sm shadow-lg" : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-4">
+      <div className="md:container mx-auto md:px-4 px-2">
         <div className="flex items-center justify-between h-16">
           <Link
             href="/"
@@ -78,7 +78,7 @@ export function Header() {
           </div>
 
           {/* Mobile Navigation Button */}
-          <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
+          <button className="md:hidden cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
@@ -95,15 +95,7 @@ export function Header() {
                   <Link
                     key={item.href}
                     href={item.href}
-                    className={`relative block px-3 py-2 text-base font-medium transition-colors hover:text-primary-500 ${
-                      isHomeLocale
-                        ? (isActive
-                            ? "text-primary-500"
-                            : scrolled
-                              ? "text-neutral-900"
-                              : "text-white")
-                        : (isActive ? "text-primary-500" : "text-neutral-900")
-                    }`}
+                    className={`relative block px-3 py-2 text-base font-medium transition-colors hover:text-primary-500 text-neutral-900`}
                     onClick={() => setIsOpen(false)}
                   >
                     {item.label}
