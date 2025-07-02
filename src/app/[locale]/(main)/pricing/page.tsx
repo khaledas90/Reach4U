@@ -1,68 +1,89 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
-import { AnimatedSection } from "@/components/animated-section";
 import { Check, Star, Zap, Crown } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function PricingPage() {
+  const t = useTranslations("common.pricing");
+
   const plans = [
     {
-      name: "Starter",
-      price: "599",
-      period: "monthly",
-      description:
-        "Perfect for small businesses starting their digital journey",
+      name: "Basic Package",
+      price: "6000",
+      period: "SAR",
+      description: "Integrated digital marketing for startup success",
       icon: Zap,
       features: [
-        "Basic SEO Optimization",
-        "Social Media Setup (2 platforms)",
-        "Monthly Analytics Report",
-        "Email Support",
-        "Content Creation (5 posts/month)",
-        "Basic Website Audit",
+        "Integrated advertising on Facebook, Instagram, Snapchat, TikTok",
+        "Precise targeting of Saudi and Gulf audiences",
+        "Competitor analysis and strategy",
+        "Weekly performance reports",
+        "Basic content management",
+        "Ideal for startups",
+        "Increased digital visibility",
+        "High-quality lead generation",
       ],
       popular: false,
       color: "from-blue-500 to-blue-600",
     },
     {
-      name: "Professional",
-      price: "1299",
-      period: "monthly",
-      description: "Ideal for growing businesses looking to expand their reach",
+      name: "Middle Package",
+      price: "14000",
+      period: "SAR",
+      description: "Marketing plus professional content design",
       icon: Star,
       features: [
-        "Everything in Starter",
-        "Advanced SEO Strategy",
-        "PPC Campaign Management",
-        "Weekly Analytics Reports",
-        "Content Creation (15 posts/month)",
-        "Graphic Design Support",
-        "Priority Support",
-        "Competitor Analysis",
-        "Custom Landing Pages",
+        "All Basic Package features",
+        "Design of 15 monthly posts",
+        "Initial visual identity (logo, colors)",
+        "Monthly content strategy",
+        "2 banner designs",
+        "Great for small/medium brands",
+        "Enhanced brand identity",
+        "Engaging professional content",
       ],
       popular: true,
       color: "from-orange-500 to-orange-600",
     },
     {
-      name: "Enterprise",
-      price: "Custom",
-      period: "quote",
-      description:
-        "Comprehensive solution for large businesses and enterprises",
+      name: "Gold Package",
+      price: "15000",
+      period: "SAR",
+      description: "Marketing, content, and website in one",
       icon: Crown,
       features: [
-        "Everything in Professional",
-        "Custom Web Development",
-        "Advanced Analytics Dashboard",
-        "Dedicated Account Manager",
-        "24/7 Priority Support",
-        "Custom Integrations",
-        "Training & Consultation",
-        "Multi-location Management",
-        "White-label Solutions",
+        "All features in previous packages",
+        "Complete website (5 pages)",
+        "Basic SEO setup",
+        "Mobile-optimized, fast-loading",
+        "Social media integration",
+        "1 month technical support",
+        "Ideal for medium businesses",
+        "Improves digital presence",
       ],
       popular: false,
       color: "from-purple-500 to-purple-600",
+    },
+    {
+      name: "Platinum Package",
+      price: "15000",
+      period: "SAR",
+      description: "Full marketing, branding, web, and media",
+      icon: Crown,
+      features: [
+        "Complete marketing management",
+        "30 pro-designed posts/month",
+        "Complete visual identity package",
+        "Advanced website with e-store",
+        "2 marketing videos/month",
+        "Daily & weekly reports",
+        "For large brands & companies",
+        "Total marketing management",
+      ],
+      popular: false,
+      color: "from-yellow-500 to-yellow-600",
     },
   ];
 
@@ -73,24 +94,23 @@ export default function PricingPage() {
         <div className="container mx-auto px-4">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Choose Your Success Plan
+              {t("choosePlan")}
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Select the perfect package to accelerate your digital growth and
-              achieve your business goals
+              {t("subtitle")}
             </p>
           </div>
         </div>
       </section>
 
-      {/* Pricing Cards */}
+      {/* Pricing Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
             {plans.map((plan, index) => (
               <div key={index}>
                 <Card
-                  className={`relative h-full  z-10 ${
+                  className={`relative h-full z-10 ${
                     plan.popular
                       ? "border-orange-500 border-2 scale-105"
                       : "border-gray-200"
@@ -99,12 +119,11 @@ export default function PricingPage() {
                   {plan.popular && (
                     <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-40">
                       <span className="bg-orange-500 text-white px-6 py-2 rounded-full text-sm font-medium shadow-lg">
-                        Most Popular
+                        {t("mostPopular")}
                       </span>
                     </div>
                   )}
 
-                  {/* Header with gradient */}
                   <div
                     className={`bg-gradient-to-r ${plan.color} p-6 text-white rounded-t-md`}
                   >
@@ -117,14 +136,8 @@ export default function PricingPage() {
                       {plan.name}
                     </CardTitle>
                     <div className="text-center mt-4">
-                      <span className="text-4xl font-bold">
-                        {plan.price === "Custom"
-                          ? plan.price
-                          : `$${plan.price}`}
-                      </span>
-                      {plan.price !== "Custom" && (
-                        <span className="text-white/80">/{plan.period}</span>
-                      )}
+                      <span className="text-4xl font-bold">{plan.price}</span>
+                      <span className="text-white/80"> {plan.period}</span>
                     </div>
                     <p className="text-white/90 text-center mt-2 text-sm">
                       {plan.description}
@@ -152,8 +165,8 @@ export default function PricingPage() {
                       size="lg"
                     >
                       {plan.price === "Custom"
-                        ? "Contact Sales"
-                        : "Get Started"}
+                        ? t("contactSales")
+                        : t("getStarted")}
                     </Button>
                   </CardContent>
                 </Card>
@@ -168,44 +181,28 @@ export default function PricingPage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Frequently Asked Questions
+              {t("faqTitle")}
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Get answers to common questions about our pricing and services
+              {t("faqSubtitle")}
             </p>
           </div>
 
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {[
-                {
-                  question: "Can I upgrade my plan later?",
-                  answer:
-                    "Yes, you can upgrade or downgrade your plan at any time. Changes will be reflected in your next billing cycle with prorated adjustments.",
-                },
-                {
-                  question: "Do you offer custom packages?",
-                  answer:
-                    "We can create custom packages tailored to your specific needs, budget, and business objectives.",
-                },
-                {
-                  question: "What's included in support?",
-                  answer:
-                    "All plans include email support. Professional and Enterprise plans include priority support, phone consultations, and dedicated account management.",
-                },
-                {
-                  question: "Is there a contract commitment?",
-                  answer:
-                    "We offer both monthly and annual billing options. Annual plans come with significant discounts and additional benefits.",
-                },
-              ].map((faq, i) => (
-                <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
-                  <h3 className="text-lg font-bold mb-3 text-gray-900">
-                    {faq.question}
-                  </h3>
-                  <p className="text-gray-600">{faq.answer}</p>
-                </div>
-              ))}
+              {t
+                .raw("faqs")
+                .map((faq: { question: string; answer: string }, i: number) => (
+                  <div
+                    key={i}
+                    className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300"
+                  >
+                    <h3 className="text-lg font-bold mb-3 text-gray-900">
+                      {faq.question}
+                    </h3>
+                    <p className="text-gray-600">{faq.answer}</p>
+                  </div>
+                ))}
             </div>
           </div>
         </div>

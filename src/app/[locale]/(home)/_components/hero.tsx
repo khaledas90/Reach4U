@@ -4,13 +4,17 @@ import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { TrendingUp, Palette, Code } from "lucide-react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export default function Hero() {
   const [isLoaded, setIsLoaded] = useState(false);
+  const t = useTranslations("common.hero");
 
   useEffect(() => {
     setIsLoaded(true);
   }, []);
+
+  const services = t.raw("services");
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 md:pt-0">
@@ -36,7 +40,7 @@ export default function Hero() {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Speech Part 1 - Main Content */}
+          {/* Main Content */}
           <div className="text-white">
             <div
               className={`transition-all duration-1000 ${
@@ -46,12 +50,11 @@ export default function Hero() {
               }`}
             >
               <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                Digital Excellence
-                <span className="block text-yellow-300">Made Simple</span>
+                {t("title")}
+                <span className="block text-yellow-300">{t("highlight")}</span>
               </h1>
               <p className="text-xl mb-8 text-orange-100 leading-relaxed">
-                We transform your business with professional digital marketing,
-                stunning design, and powerful web solutions.
+                {t("description")}
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
@@ -59,7 +62,7 @@ export default function Hero() {
                   className="bg-white text-orange-600 hover:bg-gray-100 transition-all duration-300"
                 >
                   <Link href="/services" className="text-orange-600">
-                    Get Started
+                    {t("getStarted")}
                   </Link>
                 </Button>
                 <Button
@@ -67,13 +70,13 @@ export default function Hero() {
                   variant="outline"
                   className="border-white text-white hover:bg-white hover:text-black bg-transparent transition-all duration-300"
                 >
-                  <Link href="/contact">Contact Us</Link>
+                  <Link href="/contact">{t("contactUs")}</Link>
                 </Button>
               </div>
             </div>
           </div>
 
-          {/* Animation Part - Interactive Service Icons */}
+          {/* Animated Services */}
           <div
             className={`transition-all duration-1000 delay-300 ${
               isLoaded
@@ -82,53 +85,26 @@ export default function Hero() {
             }`}
           >
             <div className="grid grid-cols-1 gap-6">
-              <div className="group bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition-all duration-300 cursor-pointer">
-                <div className="flex items-center space-x-4">
-                  <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <TrendingUp size={32} className="text-white" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-white mb-1">
-                      Digital Marketing
-                    </h3>
-                    <p className="text-orange-100 text-sm">
-                      SEO, Social Media & PPC
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="group bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition-all duration-300 cursor-pointer">
-                <div className="flex items-center space-x-4">
-                  <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <Palette size={32} className="text-white" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-white mb-1">
-                      Creative Design
-                    </h3>
-                    <p className="text-orange-100 text-sm">
-                      Branding & Visual Identity
-                    </p>
+              {[TrendingUp, Palette, Code].map((Icon, i) => (
+                <div
+                  key={i}
+                  className="group bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition-all duration-300 cursor-pointer"
+                >
+                  <div className="flex items-center space-x-4">
+                    <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <Icon size={32} className="text-white" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-white mb-1">
+                        {services[i].title}
+                      </h3>
+                      <p className="text-orange-100 text-sm">
+                        {services[i].description}
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-
-              <div className="group bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition-all duration-300 cursor-pointer">
-                <div className="flex items-center space-x-4">
-                  <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <Code size={32} className="text-white" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-white mb-1">
-                      Web Development
-                    </h3>
-                    <p className="text-orange-100 text-sm">
-                      Modern & Responsive Sites
-                    </p>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
